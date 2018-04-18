@@ -1,0 +1,76 @@
+2o. Semestre de 2017   Turno: Noite            AV1
+--------------------------------------------------
+Com relaÁ„o aos comandos do SO Linux, responda as perguntas abaixo:
+
+1 - Usando uma combinaÁ„o dos comandos cat, tail e/ou head, crie uma linha de comando linux para exibir as linhas 100 a 110 do 
+arquivo log/access.log
+Resposta (Qual comando vocÍ utilizou?): cat log/access.log | head -110 | tail -10
+
+
+
+2 - Renomear o arquivo prova1-2017.txt da sua pasta para prova1-seunome.txt . 
+Ex.: prova1-alex.txt
+Resposta (Qual comando vocÍ utilizou?): mv prova1-2017.txt prova1-philippe.txt
+
+
+
+3 - Crie 3 arquivos em branco que comecem com seu nome e termina com uma 
+sequencia 1, 2 e 3. 
+Ex.: alex1.txt, alex2.txt, alex3.txt. Que comandos vocÍ utilizou?
+Resposta: touch philippe{1..3}.txt
+
+
+
+4 - Listar todos os arquivos vazios a partir da sua pasta principal e 
+direcionar a saida para o terceiro arquivo do item anterior.
+Resposta (Qual comando utilizou?): find . -type f -empty > philippe3.txt 
+
+
+
+5 - Crie 1 pasta com seu nome+diadenascimento (ex.:alex25) e copie os 
+3 arquivos criandos anteriormente para esta pasta.
+Resposta (Qual comando utilizou?): mkdir philippe21
+cp philippe{1..3}.txt philippe21
+
+
+
+
+
+6 - Utilizando wildcards, qual o comando para listar todos os arquivos 
+que comecem com seu nome e termina com o numeral de 1 a 3 com extens„o .txt?
+Resposta: philippe{1..3}.txt
+
+
+
+
+7 - Existe um arquivo chamado access.log na sua pasta log. 
+Qual È o ip que aparece no arquivo com mais frequencia e 
+qual ip que aparece no arquivo com menos frequencia?
+Resposta 1 : sort access.log | uniq -c | sort -bgr | head -1
+Resposta 2 (qual comando vocÍ utilizou? ): sort access.log | uniq -c | sort -bgr | tail -1
+
+
+
+
+8 - Qual o comando linux para mostrar todos os arquivos vazios da pasta atual?
+Resposta: find . -empty -type f
+
+
+
+9 - Com relaÁ„o ao arquivo grepdata.txt na pasta log: 
+Imprima todas as linhas que contenham um numero de telefone no formato 999-999-9999 
+Resposta (comando utilizado): grep '[0-9]\{3\}-[0-9]\{3\}-[0-9]\{4\}' grepdata.txt
+
+
+
+10 - Listar todo o conteudo (todos os arquivos e pastas)
+a partir de sua pasta principal e direcionar a saida 
+para o segundo arquivo do item 3.
+Resposta (comando utilizado): ls -R > philippe.txt
+
+
+
+********************************************************************
+
+Envio da Prova - Preencher a prova e este formulario com seus dados 
+de envio: https://goo.gl/forms/sqrMM3wYS7ZYCYFC3
